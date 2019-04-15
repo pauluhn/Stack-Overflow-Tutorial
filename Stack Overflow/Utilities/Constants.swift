@@ -8,9 +8,9 @@
 
 import Foundation
 
-//let cellIdentifier = "Cell"
+//let cellIdentifier = "Cell" // this is how we did it in objc days
 
 enum Constants {
-//    case cellIdentifier = "Cell"
-    static let cellIdentifier = "Cell"
+//    case cellIdentifier = "Cell" // this is the previous way of doing it
+    static let cellIdentifier = "Cell" // this is the better way of doing it
 }

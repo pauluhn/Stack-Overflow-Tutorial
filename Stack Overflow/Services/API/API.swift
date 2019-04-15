@@ -27,6 +27,9 @@ class API {
         }
         
         // give that object to URLSession
+        
+        // TODO: we opted to use the dataTask(with:completionHandler:), but if we used this, how would we get the data out?
+        // hint: URLSessionDelegate
 //        let task = URLSession.shared.dataTask(with: url)
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             // we now get data back. what do we do?

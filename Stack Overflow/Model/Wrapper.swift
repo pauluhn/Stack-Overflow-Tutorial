@@ -9,14 +9,14 @@
 import Foundation
 
 struct Wrapper: Codable {
-    var questions: [Question] // TODO: refactor this later
+    var questions: [Question]
     
     enum CodingKeys: String, CodingKey {
         case questions = "items"
     }
 }
 
-// MARK: - we will put extensions here
+// MARK: - normally, we would want to put protocols in separate files
 protocol Whatever {
     func asdf()
 }

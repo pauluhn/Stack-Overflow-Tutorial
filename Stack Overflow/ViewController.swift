@@ -13,25 +13,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var questions: [Question] = []
     
+    // private queue to play around with multi-threading
     let queue = DispatchQueue(label: "ViewController Queue")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        // TODO: move this to constants
         let baseURL = "https://api.stackexchange.com"
+        // TODO: break this up using URLComponents
         let parameters = "/2.2/questions?order=desc&sort=activity&site=stackoverflow"
         let api = API(baseURL: baseURL, parameters: parameters)
+        // TODO: this get is being called on main thread (because viewDidLoad is called on main thread)
+        // move to our private queue to unblock it
         api.get { (questions) in
+            // TODO: question: is it ok to keep a strong ref to self here?
+            // if not, what should we do?
             self.questions = questions
             self.queue.async {
                 DispatchQueue.main.async {
+                    // TODO: how about here?
                     self.tableView.reloadData()
                 }
             }
         }
-        
-        // how to get the model?
     }
 
 }
