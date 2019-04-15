@@ -15,6 +15,9 @@
 		BD53C966225D662F008649AE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53C965225D662F008649AE /* TestViewController.swift */; };
 		BD53C968225D664C008649AE /* AnotherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53C967225D664C008649AE /* AnotherTest.swift */; };
 		BD53C96C225D666F008649AE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53C96B225D666F008649AE /* API.swift */; };
+		BD53C96E225D6B36008649AE /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53C96D225D6B36008649AE /* Wrapper.swift */; };
+		BD53C970225D6BB2008649AE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53C96F225D6BB2008649AE /* Question.swift */; };
+		BD53C973225D7695008649AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53C972225D7695008649AE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		BD53C965225D662F008649AE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		BD53C967225D664C008649AE /* AnotherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherTest.swift; sourceTree = "<group>"; };
 		BD53C96B225D666F008649AE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BD53C96D225D6B36008649AE /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		BD53C96F225D6BB2008649AE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		BD53C972225D7695008649AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		BD53C94E225D652D008649AE /* Stack Overflow */ = {
 			isa = PBXGroup;
 			children = (
+				BD53C971225D7678008649AE /* Utilities */,
 				BD53C969225D665A008649AE /* Services */,
 				BD53C963225D65BA008649AE /* Screens */,
 				BD53C962225D65B0008649AE /* Views */,
@@ -77,6 +84,8 @@
 		BD53C961225D65A9008649AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BD53C96D225D6B36008649AE /* Wrapper.swift */,
+				BD53C96F225D6BB2008649AE /* Question.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +128,14 @@
 				BD53C96B225D666F008649AE /* API.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		BD53C971225D7678008649AE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BD53C972225D7695008649AE /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +214,9 @@
 				BD53C966225D662F008649AE /* TestViewController.swift in Sources */,
 				BD53C950225D652D008649AE /* AppDelegate.swift in Sources */,
 				BD53C96C225D666F008649AE /* API.swift in Sources */,
+				BD53C970225D6BB2008649AE /* Question.swift in Sources */,
+				BD53C96E225D6B36008649AE /* Wrapper.swift in Sources */,
+				BD53C973225D7695008649AE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
